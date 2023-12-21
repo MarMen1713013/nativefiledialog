@@ -1,5 +1,7 @@
 # Native File Dialog #
 
+This repo is a fork of the original [Native File Dialog](https://github.com/mlabbe/nativefiledialog)
+
 A tiny, neat C library that portably invokes native file open, folder select and save dialogs.  Write dialog code once and have it pop up native dialogs on all supported platforms.  Avoid linking large dependencies like wxWidgets and qt.
 
 Features:
@@ -17,7 +19,7 @@ Features:
  - Support for non-deprecated Cocoa APIs on OS X.
  - GTK3 dialog on Linux.
  - Optional Zenity support on Linux to avoid linking GTK.
- - Tested, works alongside [http://www.libsdl.org](SDL2) on all platforms, for the game developers out there.
+ - Tested, works alongside [SDL2](http://www.libsdl.org) on all platforms, for the game developers out there.
 
 # Example Usage #
 
