@@ -9,7 +9,7 @@ pkg_check_modules(GTK REQUIRED gtk+-3.0)
 
 add_library(nfd STATIC ${CMAKE_CURRENT_SOURCE_DIR}/src/nfd_common.c ${CMAKE_CURRENT_SOURCE_DIR}/src/nfd_gtk.c)
 target_link_libraries(nfd PUBLIC ${GTK_LIBRARIES})
-target_include_directories(nfd PUBLIC ${GTK_INCLUDE_DIRS} ${CMAKE_SOURCE_DIR}/src ${CMAKE_SOURCE_DIR}/src/include)
+target_include_directories(nfd PUBLIC ${GTK_INCLUDE_DIRS} ${CMAKE_CURRENT_SOURCE_DIR}/src ${CMAKE_CURRENT_SOURCE_DIR}/src/include)
 
 macro(addtest test)
     add_executable(${test} test/test_${test}.c)
